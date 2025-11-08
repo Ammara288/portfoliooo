@@ -1,0 +1,78 @@
+*{
+    /* background-color:black; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* color: aliceblue; */
+}
+.todo-app{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.todo-header{
+    color:yellow;
+    font-family: sans-serif;
+}
+form .add-task{
+    border: none;
+    border-radius: 4px 4px 4px 4px;
+    background-color: darkturquoise;
+    padding: 1px 2px;
+    font-weight: 600;
+}
+.todo-enteries form input{
+    width: 300px;
+    border: none;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 10px;
+    color: black;
+    outline: none;
+}
+form{
+    position: relative;
+}
+form button{
+    position: relative;
+    right: 0px;
+}
+.checked span{
+    color:darkblue;
+    text-decoration: line-through;
+}
+.todo-entry{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 0.25fr 0.25fr;
+    width: 300px;
+    margin-top: 10px;
+}
+.check-btn{
+    background-color: orange;
+    color: black;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delete-btn{
+    background-color: red;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.checked .check-btn{
+    background-color: green;
+}
